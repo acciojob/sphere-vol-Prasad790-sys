@@ -1,6 +1,5 @@
-function volume_sphere() {
-    //Write your code here
-	document.getElementById('submit').addEventListener('click', volume_sphere);
+
+document.getElementById('submit').addEventListener('click', volume_sphere);
 
 function volume_sphere() {
     const radiusInput = document.getElementById('radius').value;
@@ -21,7 +20,5 @@ function volume_sphere() {
     // Round the volume to four decimal places
     volumeOutput.value = volume.toFixed(4);
 }
-    
-} 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
